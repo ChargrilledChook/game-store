@@ -9,18 +9,18 @@ html {
   box-sizing: inherit;
 }
 
-* {
+/* * {
   border: 1px solid rgb(204, 79, 79);
-}
+} */
 
 body {
   margin: 0;
+  font-family: 'Roboto',sans-serif;
 }
 
 .wrapper {
   background-image: url(https://cdnb.artstation.com/p/assets/images/images/007/382/309/large/nastya-friday-game-background-1.jpg?1505758821);
   background-repeat: no-repeat;
-  background-position: center;
   background-size: cover;
   min-height: 100vh;
   /* display: flex; */
@@ -30,13 +30,15 @@ body {
 }
 
 header {
-  /* background:rgb(207, 167, 167); */
+  padding-top: 50px;
 }
+
 
 header > h1 {
   text-align: center;
   font-size: 5em;
   margin-bottom: 75px;
+  margin-top: 0px;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -66,6 +68,7 @@ nav a:hover {
   width: 900px;
   height: 70px;
   justify-content: space-around;
+  align-items: center;
   font-size: 1.3em;
   margin: 0 auto;
   margin-bottom: 150px;
@@ -84,7 +87,9 @@ main {
 main > h2 {
   margin: 0;
   font-size: 5.5em;
-  font-weight: 400;
+  font-weight: 100;
+  font-style: italic;
+  color: rgb(88, 221, 228);
 }
 
 main > button {
@@ -92,4 +97,12 @@ main > button {
   font-size: 1.1em;
   background: rgb(88, 221, 228);
   padding: 10px;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  display: block;
 }
